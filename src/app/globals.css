@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f3efe6;
+  --foreground: #10203a;
+}
+
+@theme inline {
+  --color-paper: #f3efe6;
+  --color-cream: #f7f3ea;
+  --color-ink: #10203a;
+  --color-navy: #0c2344;
+  --color-navy-deep: #07111f;
+  --color-mist: #5c6a7e;
+  --color-line: #e3dacb;
+  --color-brass: #9c7b45;
+  --font-sans: var(--font-sans-kr), "Apple SD Gothic Neo", "Malgun Gothic",
+    sans-serif;
+  --font-serif: var(--font-serif-kr), "Apple SD Gothic Neo", "Malgun Gothic",
+    serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: #0c2344;
+  color: #f7f3ea;
+}
+
+:focus-visible {
+  outline: 2px solid #9c7b45;
+  outline-offset: 3px;
+}
