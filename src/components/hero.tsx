@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="bg-navy-deep text-cream"
+      className="bg-cream text-ink"
       aria-labelledby="hero-title"
     >
       <div className="mx-auto flex min-h-[calc(100svh-4.5rem)] w-full max-w-6xl flex-col justify-end px-5 pt-24 pb-14 md:px-10 md:pt-32 md:pb-16">
@@ -17,21 +17,21 @@ export function Hero() {
         >
           {hero.title}
         </h1>
-        <h2 className="mt-8 max-w-xl text-lg leading-relaxed font-normal text-cream/75 md:text-xl">
+        <h2 className="mt-8 max-w-xl text-lg leading-relaxed font-normal text-ink/70 md:text-xl">
           {hero.subtitle}
         </h2>
         <div className="mt-12">
           <a
             href="#projects"
-            className="inline-flex items-center gap-3 border border-cream/25 px-6 py-3 text-sm tracking-wide text-cream transition-colors hover:bg-cream hover:text-navy-deep"
+            className="inline-flex items-center gap-3 border border-ink/15 px-6 py-3 text-sm tracking-wide text-ink transition-colors hover:border-navy hover:bg-navy hover:text-cream"
           >
             {hero.cta}
             <span aria-hidden="true">→</span>
           </a>
         </div>
-        <div className="mt-20 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-cream/15 pt-6 text-sm text-cream/65">
+        <div className="mt-20 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-line pt-6 text-sm text-mist">
           <span>{site.name}</span>
-          <span className="hidden h-3 w-px bg-cream/30 sm:block" aria-hidden="true" />
+          <span className="hidden h-3 w-px bg-line sm:block" aria-hidden="true" />
           <span>{site.role}</span>
         </div>
       </div>

@@ -114,7 +114,7 @@ function ProjectDialog({ project, index, onClose }: ProjectDialogProps) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center px-4 py-8">
       <div
-        className="absolute inset-0 bg-navy-deep/75"
+        className="absolute inset-0 bg-ink/30"
         onClick={onClose}
         aria-hidden="true"
       />
@@ -123,7 +123,7 @@ function ProjectDialog({ project, index, onClose }: ProjectDialogProps) {
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="relative w-full max-w-xl bg-paper px-7 py-8 text-ink shadow-[0_24px_80px_rgba(7,17,31,0.28)] md:px-10 md:py-12"
+        className="relative w-full max-w-xl bg-cream px-7 py-8 text-ink shadow-[0_16px_40px_rgba(36,48,68,0.12)] md:px-10 md:py-12"
       >
         <div className="flex items-start justify-between gap-6">
           <p className="font-serif text-sm text-brass">

@@ -20,7 +20,7 @@ export function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-title"
-      className="scroll-mt-24 bg-navy text-cream"
+      className="scroll-mt-24 bg-cream text-ink"
     >
       <div className="mx-auto w-full max-w-6xl px-5 py-20 md:px-10 md:py-28">
         <div className="mb-12 flex items-baseline gap-4 md:mb-16">
@@ -34,7 +34,7 @@ export function Contact() {
         </div>
 
         <div>
-          <p className="text-xs tracking-[0.2em] text-cream/55 uppercase">Email</p>
+          <p className="text-xs tracking-[0.2em] text-mist uppercase">Email</p>
           <button
             type="button"
             onClick={copyEmail}
@@ -43,19 +43,19 @@ export function Contact() {
             <span className="sr-only">이메일 주소 복사 </span>
             {contact.email}
           </button>
-          <p className="mt-4 text-sm text-cream/60">클릭하면 클립보드에 복사됩니다.</p>
+          <p className="mt-4 text-sm text-mist">클릭하면 클립보드에 복사됩니다.</p>
           <p role="status" className="mt-2 min-h-6 text-sm text-brass">
             {status}
           </p>
         </div>
 
-        <dl className="mt-14 grid gap-10 border-t border-cream/15 pt-10 sm:grid-cols-2">
+        <dl className="mt-14 grid gap-10 border-t border-line pt-10 sm:grid-cols-2">
           <div>
-            <dt className="text-xs tracking-[0.2em] text-cream/55 uppercase">Phone</dt>
+            <dt className="text-xs tracking-[0.2em] text-mist uppercase">Phone</dt>
             <dd className="mt-3 text-xl">{contact.phone}</dd>
           </div>
           <div>
-            <dt className="text-xs tracking-[0.2em] text-cream/55 uppercase">
+            <dt className="text-xs tracking-[0.2em] text-mist uppercase">
               LinkedIn
             </dt>
             <dd className="mt-3 text-xl break-all">
@@ -64,7 +64,7 @@ export function Contact() {
                   href={contact.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline decoration-cream/30 underline-offset-4 transition-colors hover:text-brass"
+                  className="underline decoration-line underline-offset-4 transition-colors hover:text-brass"
                 >
                   {contact.linkedin}
                 </a>
@@ -75,7 +75,7 @@ export function Contact() {
           </div>
         </dl>
 
-        <footer className="mt-20 flex flex-wrap items-center justify-between gap-3 border-t border-cream/15 pt-6 text-sm text-cream/50">
+        <footer className="mt-20 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-6 text-sm text-mist">
           <span>{site.name}</span>
           <span>{site.role}</span>
         </footer>
